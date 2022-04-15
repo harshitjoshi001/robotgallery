@@ -1,14 +1,17 @@
+
+
 .grid {
   background-color: black;
 }
 
 .inner-container{
-  box-shadow: 5px 5px 4px 2px grey;
+  box-shadow: 5px 5px 5px 5px grey;
    align-items: center;
    width : 30vw;
   border-radius: 20px;
    border: 2px solid black;
    margin-top: 30px;
+   /* background-color: black; */
 }
 .show-container{
   display: flex;
@@ -25,7 +28,74 @@
   border-radius: 300px;
 }
 
+.cart-container{
+  box-shadow : 5px 5px 4px 2px grey;
+  width : 40vw;
+  border-radius: 30px;
+  position: relative;
+  margin-left: 400px;
+  margin-top: 70px;
+  padding: 30px ;
+}
 
+.cart-container:hover{
+  box-shadow : 50px 50px 10px 10px grey;
+  width : 40vw;
+  border-radius: 30px;
+  position: relative;
+  margin-left: 400px;
+  margin-top: 70px;
+  padding: 30px ;
+  /* background-color: rgb(116, 116, 116); */
+}
 
+.cart-container:hover{
+  box-shadow : 7px 7px 6px 4px grey;
+  width : 40vw;
+  border-radius: 30px;
+  margin-top: 70px;
+}
 
+.list-item{
+  display: flex;
+  margin: 20px;
+  list-style: none;
+  text-decoration: none;
+  box-shadow: 0px 2px 2px 0px white;
+  border-radius: 10px;
+  height: 140px;
+  box-shadow: 0px 8px 4px 0px grey;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item:hover{
+  margin: 20px;
+  list-style: none;
+  text-decoration: none;
+  box-shadow: 0px 2px 2px 0px grey;
+  border-radius: 10px;
+  height: 140px;
+  background-color: rgb(197, 184, 184)
+}
+
+.dlt-btn{
+  color : white;
+  background-color: rgb(235, 123, 123);
+  height : 3rem;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+.btn{
+  color : white;
+  background-color: rgb(13, 13, 224);
+  height :20px;
+  width : 20px
+}
+
+.qnty-heading{
+  position: absolute;
+  margin-top: 79px;
+}
 

@@ -45,7 +45,7 @@ export default function ResponsiveGrid() {
                                 <Grid item xs={2} sm={4} md={4} key={index} className="Grid">
                                     <Item  ><img src={value.image} style={{ "boxShadow": "2px 2px 2px 2px grey" }}></img></Item>
                                     <Item><h3 style={{ "boxShadow": "2px 2px 2px 2px grey" }}> Name : {value.name}</h3></Item>
-                                    <Item><h3 style={{ "boxShadow": "2px 2px 2px 2px grey" }}> Price : {value.price}</h3></Item>
+                                    <Item><h3 style={{ "boxShadow": "2px 2px 2px 2px grey" }}> Price : ฿{(value.price/.45).toFixed(2)}</h3></Item>
                                     <Item><h3 style={{ "boxShadow": "2px 2px 2px 2px grey" }}> Stock : {value.stock}</h3></Item>
                                     <Item><h3 style={{ "boxShadow": "2px 2px 2px 2px grey" }}> Material : {value.material}</h3></Item>
                                     <Item><h3 style={{ "boxShadow": "2px 2px 2px 2px grey" }}>createdAt : {dateFormat(value.createdAt, 'dd/mm/yyyy')}</h3></Item>

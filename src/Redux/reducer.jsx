@@ -2,7 +2,9 @@ const initalState = {
     robots: [],
     filtered: [],
     quantity: [],
-    totalQuantity: 0
+    totalQuantity: 0,
+    countProduct: [],
+    cartItems: []
 }
 
 const Reducer = (state = initalState, action) => {
@@ -38,6 +40,46 @@ const Reducer = (state = initalState, action) => {
                 ...state,
                 totalQuantity: state.totalQuantity - 1
             }
+
+        case "DELETEITEM":
+
+            return {
+                ...state,
+                cartItems: action.payload
+            }
+
+        case "CLEARCART":
+            return {
+                ...state,
+                countProduct : [],
+                totalQuantity: 0
+            }
+
+        case "PRODUCTCOUNT":
+            return {
+                ...state,
+                countProduct: [...state.countProduct, action.payload]
+            }
+
+        case 'GETCARTITEMS':
+            return {
+                ...state,
+                cartItems: action.payload
+            }
+
+        case "ADDFROMCART" : 
+        return{
+                  ...state,
+                  countProduct : [...state.countProduct,action.payload],
+                  totalQuantity : state.totalQuantity +1
+
+              }   
+              
+        case "REMOVEFROMCART" : 
+              return {
+                  ...state,
+                  countProduct : action.payload
+              }      
         default: return state
     }
 }

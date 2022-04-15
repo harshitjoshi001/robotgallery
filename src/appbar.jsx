@@ -123,7 +123,7 @@ const Navbar = () => {
                         <Badge badgeContent={cartCount} color="primary">
                             <Stack direction="row" spacing={1}>
                                 <IconButton color="secondary" aria-label="add to shopping cart" >
-                                    < AddShoppingCartIcon style={{color:"white"}} />
+                                   <Link to='/cart'> <AddShoppingCartIcon style={{color:"white"}}  /></Link>
                                 </IconButton>
                             </Stack>
                         </Badge>
